@@ -71,7 +71,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-
+function reversedLooper(arr) {
+  for (var i = arr.length - 1; i >= 0; i--) {
+    alert(arr[i])
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,7 +90,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-
+function evenFinder(num) {
+  var evens = []
+  for (var i = 0; i < num.length; i++) {
+    if ((num[i] % 2) == 0) {
+      evens.push(num[i])
+    }
+  }
+  return evens
+}
 
 
 
