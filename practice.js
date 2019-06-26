@@ -278,7 +278,13 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2) {
+  if (arr1.length > arr2.length) {
+    return arr1
+  } else {
+    return arr2
+  }
+}
 
 
 /*
@@ -290,7 +296,17 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(arr1, arr2) {
+  let newArray = []
+  for (var i = 0; i < arr1.length; i++) {
+    for (var j = 0; j < arr2.length; j++) {
+      if (arr1[i] == arr2[j]) {
+        newArray.push(arr1[i])
+      }
+    }
+  }
+  return newArray
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -330,7 +346,8 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(joe, cahlan, ryan, colt)
+console.log(devMountainEmployees.length)
 
 
 /*
@@ -339,7 +356,12 @@ var colt = {
 */
 
 //Code Here
-
+for (let i = 0; i < devMountainEmployees.length; i++) {
+  if (devMountainEmployees[i] == cahlan) {
+    devMountainEmployees.splice(i,1)
+    i--
+  }
+}
 
 
 ////////// PROBLEM 13 //////////
@@ -351,7 +373,7 @@ var colt = {
 */
 
 //Code Here
-
+let users = []
 
 
 /*
@@ -370,7 +392,9 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
-
+users.push(user1)
+users.push({name: 'Bob Joe', email: 'bob@joe.com', password: 'none', username: 'b0bj0e'})
+users.push({name: 'Billy Bob Joe', email: 'bbobjoe@billy.com', password: 'bbj', username: 'b1llyb0b'})
 
 
 /*
@@ -384,7 +408,11 @@ var user1 = {
 */
 
 //Code Here
-
+for (let i = 0; i < users.length; i++) {
+  if (users[i]['email'] == 'makr.mciver@devmounta.in') {
+    users.splice(i,1)
+  }
+}
 
 
 /*
